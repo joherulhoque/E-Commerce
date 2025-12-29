@@ -1,0 +1,211 @@
+USE Multi_Shop
+GO
+
+
+CREATE TABLE Shops (
+ShopId INT IDENTITY PRIMARY KEY,
+ShopName NVARCHAR(200) NOT NULL,
+OwnerName NVARCHAR(150),
+Mobile NVARCHAR(20),
+Email NVARCHAR(100),
+IsActive BIT DEFAULT 1,
+CreatedDate DATETIME DEFAULT GETDATE()
+)
+GO
+
+
+CREATE TABLE Subscription (
+    SubscriptionId INT IDENTITY(1,1) PRIMARY KEY,
+    ShopId INT FOREIGN KEY REFERENCES Shops(ShopId),
+    StartDate DATETIME NOT NULL,
+    EndDate DATETIME NOT NULL,
+    Plans NVARCHAR(50),
+    IsActive BIT DEFAULT 1
+);
+GO
+
+
+CREATE TABLE Roles (
+RoleId INT IDENTITY PRIMARY KEY,
+RoleName NVARCHAR(50) NOT NULL
+);
+
+GO
+
+CREATE TABLE Users (
+UserId INT IDENTITY PRIMARY KEY,
+ShopId INT NOT NULL,
+UserName NVARCHAR(100) NOT NULL,
+PasswordHash NVARCHAR(MAX) NOT NULL,
+RoleId INT NOT NULL,
+IsActive BIT DEFAULT 1,
+CONSTRAINT FK_Users_Shops FOREIGN KEY (ShopId) REFERENCES Shops(ShopId),
+CONSTRAINT FK_Users_Roles FOREIGN KEY (RoleId) REFERENCES Roles(RoleId)
+);
+
+GO
+
+CREATE TABLE Products (
+ProductId INT IDENTITY PRIMARY KEY,
+ShopId INT NOT NULL,
+ProductName NVARCHAR(200) NOT NULL,
+Barcode NVARCHAR(50),
+SalePrice DECIMAL(18,2) NOT NULL,
+IsActive BIT DEFAULT 1,
+CONSTRAINT FK_Products_Shops FOREIGN KEY (ShopId) REFERENCES Shops(ShopId)
+);
+GO
+
+ALTER TABLE dbo.Products ADD SKU VARCHAR(100) NULL;
+GO
+
+ALTER TABLE dbo.Products ADD Quantity INT;
+GO
+
+ALTER TABLE dbo.Products ADD CreatedDate DATETIME;
+GO
+
+
+CREATE TABLE Stock (
+StockId INT IDENTITY PRIMARY KEY,
+ShopId INT NOT NULL,
+ProductId INT NOT NULL,
+Quantity DECIMAL(18,2) DEFAULT 0,
+LastUpdated DATETIME DEFAULT GETDATE(),
+CONSTRAINT FK_Stock_Shops FOREIGN KEY (ShopId) REFERENCES Shops(ShopId),
+CONSTRAINT FK_Stock_Products FOREIGN KEY (ProductId) REFERENCES
+Products(ProductId)
+);
+GO
+
+CREATE TABLE Suppliers (
+SupplierId INT IDENTITY PRIMARY KEY,
+ShopId INT NOT NULL,
+SupplierName NVARCHAR(150) NOT NULL,
+Mobile NVARCHAR(20),
+CONSTRAINT FK_Suppliers_Shops FOREIGN KEY (ShopId) REFERENCES Shops(ShopId)
+);
+
+GO
+
+CREATE TABLE Customers (
+CustomerId INT IDENTITY PRIMARY KEY,
+ShopId INT NOT NULL,
+CustomerName NVARCHAR(150),
+Mobile NVARCHAR(20),
+CONSTRAINT FK_Customers_Shops FOREIGN KEY (ShopId) REFERENCES Shops(ShopId)
+);
+GO
+
+CREATE TABLE PurchaseMaster (
+PurchaseId INT IDENTITY PRIMARY KEY,
+ShopId INT NOT NULL,
+SupplierId INT NOT NULL,
+PurchaseDate DATETIME DEFAULT GETDATE(),
+TotalAmount DECIMAL(18,2),
+CONSTRAINT FK_Purchase_Shops FOREIGN KEY (ShopId) REFERENCES Shops(ShopId),
+CONSTRAINT FK_Purchase_Suppliers FOREIGN KEY (SupplierId) REFERENCES
+Suppliers(SupplierId)
+);
+
+GO
+
+CREATE TABLE PurchaseDetails (
+PurchaseDetailId INT IDENTITY PRIMARY KEY,
+PurchaseId INT NOT NULL,
+ProductId INT NOT NULL,
+Qty DECIMAL(18,2),
+Price DECIMAL(18,2),
+CONSTRAINT FK_PD_PM FOREIGN KEY (PurchaseId) REFERENCES
+PurchaseMaster(PurchaseId),
+CONSTRAINT FK_PD_Products FOREIGN KEY (ProductId) REFERENCES
+Products(ProductId)
+);
+
+GO
+
+CREATE TABLE SalesMaster (
+SalesId INT IDENTITY PRIMARY KEY,
+ShopId INT NOT NULL,
+CustomerId INT NULL,
+SalesDate DATETIME DEFAULT GETDATE(),
+InvoiceNo NVARCHAR(50),
+TotalAmount DECIMAL(18,2),
+CONSTRAINT FK_Sales_Shops FOREIGN KEY (ShopId) REFERENCES Shops(ShopId),
+CONSTRAINT FK_Sales_Customers FOREIGN KEY (CustomerId) REFERENCES
+Customers(CustomerId)
+);
+
+GO
+
+CREATE TABLE SalesDetails (
+SalesDetailId INT IDENTITY PRIMARY KEY,
+SalesId INT NOT NULL,
+ProductId INT NOT NULL,
+Qty DECIMAL(18,2),
+Price DECIMAL(18,2),
+CONSTRAINT FK_SD_SM FOREIGN KEY (SalesId) REFERENCES SalesMaster(SalesId),
+CONSTRAINT FK_SD_Products FOREIGN KEY (ProductId) REFERENCES
+Products(ProductId)
+);
+
+GO
+
+CREATE TABLE Cash (CashId INT IDENTITY(1,1) PRIMARY KEY, ShopId INT, Date DATETIME, Amount DECIMAL(18,2), Type NVARCHAR(10), Description NVARCHAR(200));
+CREATE TABLE Bank (BankId INT IDENTITY(1,1) PRIMARY KEY, ShopId INT, BankName NVARCHAR(100), Date DATETIME, Amount DECIMAL(18,2), Type NVARCHAR(10), Description NVARCHAR(200));
+CREATE TABLE Ledger (LedgerId INT IDENTITY(1,1) PRIMARY KEY, ShopId INT, Date DATETIME, AccountName NVARCHAR(100), Debit DECIMAL(18,2), Credit DECIMAL(18,2), Description NVARCHAR(200));
+GO
+
+
+CREATE TABLE Payments (
+PaymentId INT IDENTITY PRIMARY KEY,
+ShopId INT NOT NULL,
+SalesId INT NOT NULL,
+PaymentType NVARCHAR(20), -- Cash / Bank / bKash
+Amount DECIMAL(18,2),
+PayDate DATETIME DEFAULT GETDATE(),
+CONSTRAINT FK_Payments_Shops FOREIGN KEY (ShopId) REFERENCES Shops(ShopId),
+CONSTRAINT FK_Payments_Sales FOREIGN KEY (SalesId) REFERENCES
+SalesMaster(SalesId)
+);
+GO
+
+CREATE TABLE Accounts (
+AccountId INT IDENTITY PRIMARY KEY,
+ShopId INT NOT NULL,
+AccountName NVARCHAR(100),
+AccountType NVARCHAR(50), -- Cash / Bank / Expense / Income
+CONSTRAINT FK_Accounts_Shops FOREIGN KEY (ShopId) REFERENCES Shops(ShopId)
+);
+GO
+
+CREATE TABLE Transactions (
+TransactionId INT IDENTITY PRIMARY KEY,
+ShopId INT NOT NULL,
+AccountId INT NOT NULL,
+Debit DECIMAL(18,2) DEFAULT 0,
+Credit DECIMAL(18,2) DEFAULT 0,
+TranDate DATETIME DEFAULT GETDATE(),
+RefNo NVARCHAR(50),
+CONSTRAINT FK_Trans_Shops FOREIGN KEY (ShopId) REFERENCES Shops(ShopId),
+CONSTRAINT FK_Trans_Accounts FOREIGN KEY (AccountId) REFERENCES
+Accounts(AccountId)
+);
+
+GO
+
+CREATE TABLE UserLogin (
+    UserId INT IDENTITY(1,1) PRIMARY KEY,
+    Username NVARCHAR(50),
+    Password NVARCHAR(50),
+    Role NVARCHAR(20)  -- SuperAdmin, ShopAdmin, Staff
+);
+
+
+CREATE TABLE UserLogin (
+    UserId INT IDENTITY(1,1) PRIMARY KEY,
+    Username NVARCHAR(50),
+    Password NVARCHAR(50),
+    Role NVARCHAR(50),
+    ShopId INT
+);

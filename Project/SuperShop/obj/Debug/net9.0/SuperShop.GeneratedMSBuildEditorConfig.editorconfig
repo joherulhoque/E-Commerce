@@ -1,0 +1,113 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SuperShop
+build_property.RootNamespace = SuperShop
+build_property.ProjectDir = D:\Floder File\Project\E-Commerce\Project\SuperShop\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Floder File\Project\E-Commerce\Project\SuperShop
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/Floder File/Project/E-Commerce/Project/SuperShop/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Floder File/Project/E-Commerce/Project/SuperShop/Components/Layout/BlankLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcQmxhbmtMYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Floder File/Project/E-Commerce/Project/SuperShop/Components/Pages/Accounting/Bank.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50aW5nXEJhbmsucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Floder File/Project/E-Commerce/Project/SuperShop/Components/Pages/Accounting/Cash.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50aW5nXENhc2gucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Floder File/Project/E-Commerce/Project/SuperShop/Components/Pages/Accounting/Ledger.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50aW5nXExlZGdlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Floder File/Project/E-Commerce/Project/SuperShop/Components/Pages/Accounting/ProfitLoss.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xBY2NvdW50aW5nXFByb2ZpdExvc3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Floder File/Project/E-Commerce/Project/SuperShop/Components/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDb3VudGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Floder File/Project/E-Commerce/Project/SuperShop/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Floder File/Project/E-Commerce/Project/SuperShop/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Floder File/Project/E-Commerce/Project/SuperShop/Components/Pages/OnlineAccess/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xPbmxpbmVBY2Nlc3NcTG9naW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Floder File/Project/E-Commerce/Project/SuperShop/Components/Pages/POS/POS.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQT1NcUE9TLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Floder File/Project/E-Commerce/Project/SuperShop/Components/Pages/ShopAdmin/Product.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTaG9wQWRtaW5cUHJvZHVjdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Floder File/Project/E-Commerce/Project/SuperShop/Components/Pages/ShopAdmin/Purchase.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTaG9wQWRtaW5cUHVyY2hhc2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Floder File/Project/E-Commerce/Project/SuperShop/Components/Pages/ShopAdmin/Sales.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTaG9wQWRtaW5cU2FsZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Floder File/Project/E-Commerce/Project/SuperShop/Components/Pages/ShopAdmin/Staff.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTaG9wQWRtaW5cU3RhZmYucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Floder File/Project/E-Commerce/Project/SuperShop/Components/Pages/ShopAdmin/Stock.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTaG9wQWRtaW5cU3RvY2sucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Floder File/Project/E-Commerce/Project/SuperShop/Components/Pages/SuperAdmin/Shop.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTdXBlckFkbWluXFNob3AucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Floder File/Project/E-Commerce/Project/SuperShop/Components/Pages/SuperAdmin/Subscription.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTdXBlckFkbWluXFN1YnNjcmlwdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Floder File/Project/E-Commerce/Project/SuperShop/Components/Pages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xXZWF0aGVyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Floder File/Project/E-Commerce/Project/SuperShop/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Floder File/Project/E-Commerce/Project/SuperShop/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Floder File/Project/E-Commerce/Project/SuperShop/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-fgt7bmxz78
+
+[D:/Floder File/Project/E-Commerce/Project/SuperShop/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-af7an8rlyc

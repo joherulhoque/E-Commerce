@@ -1,0 +1,60 @@
+@page "/Cash"
+@using SuperShop.Services
+@using SuperShop.Models
+@inject AccountingService AccountingService
+@inject SuperAdminService AdminService
+
+@rendermode InteractiveServer
+<h3>Cash Management</h3>
+
+@* <select @bind="selectedShopId" @onchange="LoadCash"> *@
+<select @bind="selectedShopId" @bind:after="LoadCash">
+<option value="">-- Select Shop --</option>
+@foreach(var shop in shops){<option value="@shop.ShopId">@shop.ShopName</option>}
+</select>
+
+<input type="date" @bind="date" />
+<input type="number" placeholder="Amount" @bind="amount" />
+<select @bind="type">
+<option value="In">In</option>
+<option value="Out">Out</option>
+</select>
+<input placeholder="Description" @bind="description" />
+<button @onclick="AddCashEntry">Add</button>
+
+<table class="table">
+<thead><tr><th>Date</th><th>Amount</th><th>Type</th><th>Description</th></tr></thead>
+<tbody>
+@foreach(var c in cashEntries)
+{
+<tr>
+<td>@c.Date.ToShortDateString()</td>
+<td>@c.Amount</td>
+<td>@c.Type</td>
+<td>@c.Description</td>
+</tr>
+}
+</tbody>
+</table>
+
+@code{
+private int selectedShopId;
+private DateTime date=DateTime.Today;
+private decimal amount;
+private string type="In", description;
+private List<Shops> shops=new List<Shops>();
+private List<CashEntry> cashEntries=new List<CashEntry>();
+
+protected override void OnInitialized()=>shops=AdminService.GetShops();
+
+private void LoadCash(){ if(selectedShopId!=0) cashEntries=AccountingService.GetCashEntries(selectedShopId); }
+
+private void AddCashEntry()
+{
+    if(selectedShopId==0 || amount<=0) return;
+    var entry=new CashEntry{ShopId=selectedShopId, Date=date, Amount=amount, Type=type, Description=description};
+    AccountingService.AddCash(entry);
+    amount=0; description="";
+    LoadCash();
+}
+}

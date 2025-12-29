@@ -1,0 +1,9 @@
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\styles.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\styles.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\styles.min.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\styles.min.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\styles.rtl.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\styles.rtl.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\styles.rtl.min.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\styles.rtl.min.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\js\script.js

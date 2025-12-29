@@ -1,0 +1,14 @@
+namespace SuperShop.Models
+{
+    public class StaffUsers
+    {
+        public int StaffId { get; set; }
+        public int ShopId { get; set; }
+        public string Name { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public string Role { get; set; }
+        public bool IsActive { get; set; }
+    }
+
+}

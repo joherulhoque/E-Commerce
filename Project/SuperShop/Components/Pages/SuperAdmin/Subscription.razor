@@ -1,0 +1,95 @@
+@page "/Subscription"
+@using SuperShop.Models
+@using SuperShop.Services
+@inject SubscriptionService SubService
+@inject SuperAdminService AdminService
+
+
+@rendermode InteractiveServer
+
+<h3>Subscription Management</h3>
+
+<select @bind="selectedShopId">
+    <option value="">-- Select Shop --</option>
+    @foreach (var shop in shops)
+    {
+        <option value="@shop.ShopId">@shop.ShopName</option>
+    }
+</select>
+
+<br />
+<br />
+<input type="date" @bind="startDate" />
+<input type="date" @bind="endDate" />
+<input placeholder="Plan Name" @bind="plan" />
+<button @onclick="CreateSubscription">Add Subscription</button>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Plan</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var sub in subscriptions)
+        {
+            <tr>
+                <td>@sub.Plan</td>
+                <td>@sub.StartDate.ToShortDateString()</td>
+                <td>@sub.EndDate.ToShortDateString()</td>
+                <td>@(sub.IsActive ? "Active" : "Inactive")</td>
+                <td>
+                    <button @onclick="() => ToggleStatus(sub.SubscriptionId, !sub.IsActive)">
+                        @(sub.IsActive ? "Disable" : "Enable")
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    private int selectedShopId;
+    private DateTime startDate = DateTime.Today;
+    private DateTime endDate = DateTime.Today.AddMonths(1);
+    private string plan;
+    private List<Shops> shops = new List<Shops>();
+    private List<Subscriptions> subscriptions = new List<Subscriptions>();
+
+    protected override void OnInitialized()
+    {
+        shops = AdminService.GetShops();
+    }
+
+    private void LoadSubscriptions()
+    {
+        if (selectedShopId != 0)
+            subscriptions = SubService.GetSubscriptions(selectedShopId);
+    }
+
+    private void CreateSubscription()
+    {
+        if (selectedShopId == 0) return;
+        var sub = new Subscriptions
+        {
+            ShopId = selectedShopId,
+            StartDate = startDate,
+            EndDate = endDate,
+            Plan = plan,
+            IsActive = true
+        };
+        SubService.CreateSubscription(sub);
+        plan = "";
+        LoadSubscriptions();
+    }
+
+    private void ToggleStatus(int subId, bool status)
+    {
+        SubService.ToggleSubscriptionStatus(subId, status);
+        LoadSubscriptions();
+    }
+}

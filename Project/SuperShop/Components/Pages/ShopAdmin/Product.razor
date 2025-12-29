@@ -1,0 +1,71 @@
+﻿@page "/Product"
+@using SuperShop.Models
+@using SuperShop.Services
+@inject ProductService ProdService
+@inject SuperAdminService AdminService
+
+
+@rendermode InteractiveServer
+
+<h3>Product Management</h3>
+
+@* <select @bind="selectedShopId" @onchange="LoadProducts"> *@
+<select @bind="selectedShopId" @bind:after="LoadProducts">
+    <option value="">-- Select Shop --</option>
+    @foreach(var shop in shops)
+    {
+        <option value="@shop.ShopId">@shop.ShopName</option>
+    }
+</select>
+
+<br /><br />
+<input placeholder="Product Name" @bind="productName" />
+<input placeholder="SKU" @bind="sku" />
+<input type="number" placeholder="Price" @bind="price" />
+<input type="number" placeholder="Quantity" @bind="quantity" />
+<button @onclick="AddProduct">Add Product</button>
+
+<table class="table">
+<thead>
+<tr>
+<th>Name</th><th>SKU</th><th>Price</th><th>Quantity</th><th>Created Date</th>
+</tr>
+</thead>
+<tbody>
+@foreach(var p in products)
+{
+<tr>
+<td>@p.ProductName</td>
+<td>@p.SKU</td>
+                <td>@p.SalePrice</td>
+<td>@p.Quantity</td>
+<td>@p.CreatedDate.ToShortDateString()</td>
+</tr>
+}
+</tbody>
+</table>
+
+@code{
+private int selectedShopId;
+private List<Shops> shops = new List<Shops>();
+private List<Products> products = new List<Products>();
+private string productName, sku;
+private decimal price;
+private int quantity;
+
+protected override void OnInitialized() => shops = AdminService.GetShops();
+
+private void LoadProducts() { 
+    if(selectedShopId!=0) products = ProdService.GetProducts(selectedShopId); 
+}
+
+private void AddProduct()
+{
+        var p = new Products { ShopId = selectedShopId, ProductName = productName, SKU = sku, SalePrice = price, Quantity = quantity };
+    ProdService.AddProduct(p);
+    productName=sku="";
+    price=0;
+    quantity=0;
+    LoadProducts();
+}
+}

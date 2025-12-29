@@ -1,0 +1,65 @@
+@page "/Staff"
+@using SuperShop.Models
+@using SuperShop.Services
+@inject StaffService StaffService
+@inject SuperAdminService AdminService
+
+
+@rendermode InteractiveServer
+
+<h3>Staff Management</h3>
+
+@* <select @bind="selectedShopId" @onchange="LoadStaff"> *@
+<select @bind="selectedShopId" @bind:after="LoadStaff">
+<option value="">-- Select Shop --</option>
+@foreach(var shop in shops){<option value="@shop.ShopId">@shop.ShopName</option>}
+</select>
+
+<input placeholder="Name" @bind="name" />
+<input placeholder="Username" @bind="username" />
+<input type="password" placeholder="Password" @bind="password" />
+<input placeholder="Role" @bind="role" />
+<button @onclick="AddStaff">Add Staff</button>
+
+<table class="table">
+<thead><tr><th>Name</th><th>Username</th><th>Role</th><th>Status</th><th>Action</th></tr></thead>
+<tbody>
+@foreach(var s in staffList)
+{
+<tr>
+<td>@s.Name</td>
+<td>@s.Username</td>
+<td>@s.Role</td>
+<td>@(s.IsActive?"Active":"Inactive")</td>
+<td>
+<button @onclick="() => ToggleStatus(s.StaffId,!s.IsActive)">@((s.IsActive)?"Disable":"Enable")</button>
+</td>
+</tr>
+}
+</tbody>
+</table>
+
+@code{
+private int selectedShopId;
+private string name, username, password, role;
+private List<Shops> shops=new List<Shops>();
+private List<StaffUsers> staffList=new List<StaffUsers>();
+
+protected override void OnInitialized()=>shops=AdminService.GetShops();
+
+private void LoadStaff(){ if(selectedShopId!=0) staffList=StaffService.GetStaff(selectedShopId); }
+
+private void AddStaff()
+{
+    var s=new StaffUsers{ShopId=selectedShopId, Name=name, Username=username, Password=password, Role=role, IsActive=true};
+    StaffService.AddStaff(s);
+    name=username=password=role="";
+    LoadStaff();
+}
+
+private void ToggleStatus(int staffId,bool status)
+{
+    StaffService.ToggleStaffStatus(staffId,status);
+    LoadStaff();
+}
+}

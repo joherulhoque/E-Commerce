@@ -1,0 +1,41 @@
+@page "/Stock"
+@using SuperShop.Models
+@using SuperShop.Services
+@inject StockService StockService
+@inject SuperAdminService AdminService
+
+
+@rendermode InteractiveServer
+
+<h3>Stock Report</h3>
+
+@* <select @bind="selectedShopId" @onchange="LoadStock"> *@
+<select @bind="selectedShopId" @bind:after="LoadStock">
+<option value="">-- Select Shop --</option>
+@foreach(var shop in shops){<option value="@shop.ShopId">@shop.ShopName</option>}
+</select>
+
+<table class="table">
+<thead><tr><th>Product</th><th>Purchase</th><th>Sale</th><th>Current Stock</th></tr></thead>
+<tbody>
+@foreach(var s in stocks)
+{
+<tr>
+<td>@s.ProductName</td>
+<td>@s.TotalPurchase</td>
+<td>@s.TotalSale</td>
+<td>@s.CurrentStock</td>
+</tr>
+}
+</tbody>
+</table>
+
+@code{
+private int selectedShopId;
+private List<Shops> shops=new List<Shops>();
+private List<Stocks> stocks=new List<Stocks>();
+
+protected override void OnInitialized()=>shops=AdminService.GetShops();
+
+private void LoadStock(){ if(selectedShopId!=0) stocks=StockService.GetStock(selectedShopId); }
+}

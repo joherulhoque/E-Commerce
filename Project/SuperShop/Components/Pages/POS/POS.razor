@@ -1,0 +1,102 @@
+@page "/POS"
+@using SuperShop.Models
+@using SuperShop.Services
+@inject SuperAdminService AdminService
+@inject ProductService ProductService
+@inject StaffService StaffService
+@inject POSService POSService
+
+
+@rendermode InteractiveServer
+
+<h3>POS (Invoice)</h3>
+
+@* <select @bind="selectedShopId" @onchange="LoadShopData"> *@
+<select @bind="selectedShopId" @bind:after="LoadShopData">
+<option value="">-- Select Shop --</option>
+@foreach(var shop in shops){<option value="@shop.ShopId">@shop.ShopName</option>}
+</select>
+
+<select @bind="selectedStaffId">
+<option value="">-- Select Staff --</option>
+@foreach(var staff in staffList){<option value="@staff.StaffId">@staff.Name</option>}
+</select>
+
+<br/><br/>
+<select @bind="selectedProductId">
+<option value="">-- Select Product --</option>
+@foreach(var p in products){<option value="@p.ProductId">@p.ProductName (Stock: @p.Quantity)</option>}
+</select>
+<input type="number" placeholder="Qty" @bind="quantity" />
+<button @onclick="AddToInvoice">Add</button>
+
+<h4>Invoice Items</h4>
+<table class="table">
+<thead><tr><th>Product</th><th>Qty</th><th>Unit Price</th><th>Subtotal</th></tr></thead>
+<tbody>
+@foreach(var item in invoiceItems)
+{
+<tr>
+<td>@products.FirstOrDefault(x=>x.ProductId==item.ProductId)?.ProductName</td>
+<td>@item.Quantity</td>
+<td>@item.UnitPrice</td>
+<td>@item.SubTotal</td>
+</tr>
+}
+</tbody>
+</table>
+
+<p>Total: @invoiceItems.Sum(x=>x.SubTotal)</p>
+
+<select @bind="paymentType">
+<option value="Cash">Cash</option>
+<option value="bKash">bKash</option>
+<option value="Bank">Bank</option>
+</select>
+
+<button @onclick="SaveInvoice">Save Invoice</button>
+
+@code{
+private int selectedShopId, selectedStaffId, selectedProductId, quantity;
+private string paymentType="Cash";
+private List<Shops> shops=new List<Shops>();
+private List<Products> products=new List<Products>();
+private List<StaffUsers> staffList=new List<StaffUsers>();
+private List<InvoiceDetail> invoiceItems=new List<InvoiceDetail>();
+
+protected override void OnInitialized()=>shops=AdminService.GetShops();
+
+private void LoadShopData()
+{
+    if(selectedShopId!=0)
+    {
+        products=ProductService.GetProducts(selectedShopId);
+        staffList=StaffService.GetStaff(selectedShopId);
+        invoiceItems.Clear();
+    }
+}
+
+private void AddToInvoice()
+{
+    if(selectedProductId==0 || quantity<=0) return;
+    var prod = products.FirstOrDefault(x=>x.ProductId==selectedProductId);
+    if(prod==null || quantity>prod.Quantity) return;
+        invoiceItems.Add(new InvoiceDetail { ProductId = selectedProductId, Quantity = quantity, UnitPrice = prod.SalePrice });
+    quantity=0; selectedProductId=0;
+}
+
+private void SaveInvoice()
+{
+    if(selectedShopId==0 || selectedStaffId==0 || !invoiceItems.Any()) return;
+    var invoice=new Invoice{
+        ShopId=selectedShopId,
+        StaffId=selectedStaffId,
+        TotalAmount=invoiceItems.Sum(x=>x.SubTotal),
+        PaymentType=paymentType,
+        Details=invoiceItems
+    };
+    POSService.CreateInvoice(invoice);
+    invoiceItems.Clear();
+    LoadShopData();
+}
+}

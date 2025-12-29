@@ -1,0 +1,35 @@
+1. Data
+-------------------
+cd Services
+
+type nul > ShopService.cs
+type nul > SubscriptionService.cs
+type nul > ProductService.cs
+type nul > PurchaseService.cs
+type nul > SalesService.cs
+type nul > StockService.cs
+type nul > StaffService.cs
+type nul > POSService.cs
+type nul > AccountingService.cs
+type nul > UserService.cs
+
+2. Module 
+--------------------------
+type nul > Shop.cs
+type nul > Subscription.cs
+type nul > Product.cs
+type nul > Purchase.cs
+type nul > Sale.cs
+type nul > Stock.cs
+type nul > StaffUser.cs
+type nul > Invoice.cs
+type nul > InvoiceDetail.cs
+type nul > CashEntry.cs
+type nul > BankEntry.cs
+type nul > LedgerEntry.cs
+type nul > UserLogin.cs
+
+3. Page Create
+----------------------------
+type nul > Shop.razor
+type nul > Subscription.razor

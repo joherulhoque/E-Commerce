@@ -1,0 +1,68 @@
+@page "/Shop"
+@using SuperShop.Models
+@using SuperShop.Services
+@inject SuperAdminService AdminService
+
+@rendermode InteractiveServer
+
+<h3>Super Admin - Shops</h3>
+
+<input @bind="newShopName" placeholder="Shop Name" />
+<input @bind="ownerName" placeholder="Owner Name" />
+<button @onclick="CreateShop">Create Shop</button>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Shop Name</th>
+            <th>Owner Name</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var shop in shops)
+        {
+            <tr>
+                <td>@shop.ShopName</td>
+                <td>@shop.OwnerName</td>
+                <td>@(shop.IsActive ? "Active" : "Inactive")</td>
+                <td>
+                    <button @onclick="() => ToggleShop(shop.ShopId, !shop.IsActive)">
+                        @(shop.IsActive ? "Disable" : "Enable")
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    private string newShopName;
+    private string ownerName;
+    private List<Shops> shops = new List<Shops>();
+
+    protected override void OnInitialized()
+    {
+        LoadShops();
+    }
+
+    private void LoadShops()
+    {
+        shops = AdminService.GetShops();
+    }
+
+    private void CreateShop()
+    {
+        var shop = new Shops { ShopName = newShopName, OwnerName = ownerName };
+        AdminService.CreateShop(shop);
+        newShopName = ownerName = "";
+        LoadShops();
+    }
+
+    private void ToggleShop(int shopId, bool status)
+    {
+        AdminService.ToggleShopStatus(shopId, status);
+        LoadShops();
+    }
+}

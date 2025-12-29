@@ -1,0 +1,91 @@
+🧩 Core Modules (Must Have)
+
+1️ Super Admin
+• Shop Create
+• Subscription
+• Disable / Enable Shop
+2 Shop Admin
+• Product
+• Purchase
+• Sales
+• Stock
+• Staff User
+3️ POS (দোকান)
+• Barcode (optional)
+• Invoice
+• Cash / bKash / Bank
+4️ Accounting
+• Cash
+• Bank
+• Ledger
+• Profit / Loss
+5️ Online Access
+• Browser থেকে Login
+• Report / Invoice Print
+
+
+---------------------------
+
+SuperShop/
+│
+├─ Data/                  # ADO.NET Services
+│   ├─ ShopService.cs
+│   ├─ SubscriptionService.cs
+│   ├─ ProductService.cs
+│   ├─ PurchaseService.cs
+│   ├─ SalesService.cs
+│   ├─ StockService.cs
+│   ├─ StaffService.cs
+│   ├─ POSService.cs
+│   ├─ AccountingService.cs
+│   └─ UserService.cs
+│
+├─ Models/                # C# Models
+│   ├─ Shop.cs
+│   ├─ Subscription.cs
+│   ├─ Product.cs
+│   ├─ Purchase.cs
+│   ├─ Sale.cs
+│   ├─ Stock.cs
+│   ├─ StaffUser.cs
+│   ├─ Invoice.cs
+│   ├─ InvoiceDetail.cs
+│   ├─ CashEntry.cs
+│   ├─ BankEntry.cs
+│   ├─ LedgerEntry.cs
+│   └─ UserLogin.cs
+│
+├─ Pages/                 # Razor Pages (Blazor)
+│   ├─ SuperAdmin/
+│   │   ├─ Shop.razor
+│   │   └─ Subscription.razor
+│   ├─ ShopAdmin/
+│   │   ├─ Product.razor
+│   │   ├─ Purchase.razor
+│   │   ├─ Sales.razor
+│   │   ├─ Stock.razor
+│   │   └─ Staff.razor
+│   ├─ POS/
+│   │   └─ POS.razor
+│   ├─ Accounting/
+│   │   ├─ Cash.razor
+│   │   ├─ Bank.razor
+│   │   ├─ Ledger.razor
+│   │   └─ ProfitLoss.razor
+│   └─ OnlineAccess/
+│       └─ Login.razor
+│
+├─ wwwroot/
+│   └─ css/
+│       └─ site.css
+│
+├─ Program.cs
+└─ appsettings.json       # DB Connection String
+
+-----------------------------------
+1 Login (UserService set Role)
+2 Menu auto show
+3 SuperAdmin → Shop
+4 ShopAdmin → Product
+5 POS
+6 Accounting
