@@ -37,7 +37,7 @@ namespace SuperShop.Services
                     cmdDetail.ExecuteNonQuery();
 
                     // Update Product Stock
-                    string queryStock = "UPDATE Product SET Quantity = Quantity - @Qty WHERE ProductId=@ProductId";
+                    string queryStock = "UPDATE Products SET Quantity = Quantity - @Qty WHERE ProductId=@ProductId";
                     using var cmdStock = new SqlCommand(queryStock, con, transaction);
                     cmdStock.Parameters.AddWithValue("@Qty", detail.Quantity);
                     cmdStock.Parameters.AddWithValue("@ProductId", detail.ProductId);

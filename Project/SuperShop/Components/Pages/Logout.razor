@@ -1,0 +1,50 @@
+﻿@page "/Logout"
+@using SuperShop.Components.Layout
+@* @layout LoginLayout
+ *@
+
+@* @layout BlankLayout *@
+@inject NavigationManager Nav
+
+<div class="col-md-12">
+    You are logged out Redirect to Login Page.
+</div>
+
+
+@code {
+
+	
+	// protected override async Task OnInitializedAsync()
+	// {
+	// 	await LogOut();
+	// }
+
+	private async Task LogOut()
+	{
+		
+		StateHasChanged();
+		// Logout Logic
+		Nav.NavigateTo("/", true);
+		// await Task.Delay(TimeSpan.FromMinutes(15));
+	}
+
+
+	// async Task LogOut()
+	// {
+	// 	try
+	// 	{
+			
+	// 		await Task.Delay(TimeSpan.FromMinutes(15));
+	// 		StateHasChanged();
+	// 		Nav.NavigateTo("/", true);
+		
+
+	// 	}
+	// 	catch (Exception ex)
+	// 	{
+			
+	// 		StateHasChanged();
+	// 		Nav.NavigateTo("/", true);
+	// 	}
+	// }
+}

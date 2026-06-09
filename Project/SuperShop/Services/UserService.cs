@@ -38,7 +38,8 @@ namespace SuperShop.Services
             }
         }
 
-        public void Logout()
+
+        public async Task Logout()
         {
             Role = null;
             ShopId = 0;

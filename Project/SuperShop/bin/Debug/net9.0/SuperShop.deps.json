@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v9.0": {
       "SuperShop/1.0.0": {
         "dependencies": {
-          "Blazor.Bootstrap": "3.5.0",
+          "Blazor.Bootstrap": "3.4.0",
           "Blazorise.Icons.Bootstrap": "1.8.8",
           "Blazorise.Sidebar": "1.8.8",
           "Microsoft.Data.SqlClient": "6.1.3"
@@ -44,14 +44,14 @@
           }
         }
       },
-      "Blazor.Bootstrap/3.5.0": {
+      "Blazor.Bootstrap/3.4.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.11"
         },
         "runtime": {
           "lib/net9.0/BlazorBootstrap.dll": {
-            "assemblyVersion": "3.5.0.0",
-            "fileVersion": "3.5.0.0"
+            "assemblyVersion": "3.4.0.0",
+            "fileVersion": "3.4.0.0"
           }
         }
       },
@@ -570,12 +570,12 @@
       "path": "azure.identity/1.14.2",
       "hashPath": "azure.identity.1.14.2.nupkg.sha512"
     },
-    "Blazor.Bootstrap/3.5.0": {
+    "Blazor.Bootstrap/3.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-26dwbF1z84v/e0zbUb+c58k7a4NBbdTselt5T766m0vqj7Pq0wWTokfu5C6svATCUppZm8eCS6+zIduaF7Wnwg==",
-      "path": "blazor.bootstrap/3.5.0",
-      "hashPath": "blazor.bootstrap.3.5.0.nupkg.sha512"
+      "sha512": "sha512-RlK531tJCXGEoESwjDIARttoRPtOCXXQqrNwfaai7sIWir2pqsBop0gySBqN742m+K2vY9p9J7Mwwl6XcNXm6g==",
+      "path": "blazor.bootstrap/3.4.0",
+      "hashPath": "blazor.bootstrap.3.4.0.nupkg.sha512"
     },
     "Blazorise/1.8.8": {
       "type": "package",

@@ -10,6 +10,7 @@ builder.Services.AddRazorComponents()
 
 builder.Services.AddBlazorBootstrap();
 
+
 //builder.Services.AddScoped<ProductService>(sp =>
 //{
 //    string conn = "Server=.;Database=Multi_Shop;Trusted_Connection=True;"; // আপনার connection string বা অন্য string

@@ -10,10 +10,14 @@
     <Folder Include="Components\Pages\Accounting\" />
     <Folder Include="Components\Pages\POS\" />
     <Folder Include="Components\Pages\SuperAdmin\" />
+    <Folder Include="wwwroot\fonts\" />
+    <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\image\icons\" />
+    <Folder Include="wwwroot\vendor\" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Blazor.Bootstrap" Version="3.5.0" />
+    <PackageReference Include="Blazor.Bootstrap" Version="3.4.0" />
     <PackageReference Include="Blazorise.Icons.Bootstrap" Version="1.8.8" />
     <PackageReference Include="Blazorise.Sidebar" Version="1.8.8" />
     <PackageReference Include="Microsoft.Data.SqlClient" Version="6.1.3" />

@@ -11,7 +11,7 @@ namespace SuperShop.Services
         public void AddPurchase(Purchases p)
         {
             using var con = new SqlConnection(_connectionString);
-            string query = "INSERT INTO Purchase (ShopId, ProductId, Quantity, UnitPrice) VALUES (@ShopId,@ProductId,@Quantity,@UnitPrice)";
+            string query = "INSERT INTO PurchaseMaster (ShopId, ProductId, Quantity, UnitPrice) VALUES (@ShopId,@ProductId,@Quantity,@UnitPrice)";
             using var cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@ShopId", p.ShopId);
             cmd.Parameters.AddWithValue("@ProductId", p.ProductId);
@@ -24,7 +24,7 @@ namespace SuperShop.Services
         {
             var list = new List<Purchases>();
             using var con = new SqlConnection(_connectionString);
-            string query = "SELECT * FROM Purchase WHERE ShopId=@ShopId";
+            string query = "SELECT * FROM PurchaseMaster WHERE ShopId=@ShopId";
             using var cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@ShopId", shopId);
             con.Open();

@@ -71,7 +71,7 @@ private void LoadShopData()
     if(selectedShopId!=0)
     {
         products=ProductService.GetProducts(selectedShopId);
-        staffList=StaffService.GetStaff(selectedShopId);
+       // staffList=StaffService.GetStaff(selectedShopId);
         invoiceItems.Clear();
     }
 }
@@ -87,7 +87,8 @@ private void AddToInvoice()
 
 private void SaveInvoice()
 {
-    if(selectedShopId==0 || selectedStaffId==0 || !invoiceItems.Any()) return;
+    if(selectedShopId==0 || //selectedStaffId==0 || --staff not working
+        !invoiceItems.Any()) return;
     var invoice=new Invoice{
         ShopId=selectedShopId,
         StaffId=selectedStaffId,

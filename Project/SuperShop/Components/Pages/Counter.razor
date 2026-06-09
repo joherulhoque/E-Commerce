@@ -1,5 +1,6 @@
 ﻿@page "/counter"
 @rendermode InteractiveServer
+@using BlazorBootstrap;
 
 <PageTitle>Counter</PageTitle>
 
@@ -8,6 +9,8 @@
 <p role="status">Current count: @currentCount</p>
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<Icon Name="IconName.Facebook" Size="IconSize.x2" Color="IconColor.Primary" />
 
 @code {
     private int currentCount = 0;

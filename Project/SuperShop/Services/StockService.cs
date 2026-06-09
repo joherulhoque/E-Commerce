@@ -11,12 +11,11 @@ namespace SuperShop.Models
         {
             var list = new List<Stocks>();
             using var con = new SqlConnection(_connectionString);
-            string query = @"
-        SELECT p.ProductId, p.ProductName,
-        ISNULL((SELECT SUM(Quantity) FROM Purchase WHERE ProductId=p.ProductId AND ShopId=@ShopId),0) as TotalPurchase,
-        ISNULL((SELECT SUM(Quantity) FROM Sales WHERE ProductId=p.ProductId AND ShopId=@ShopId),0) as TotalSale
+            string query = @"SELECT p.ProductId, p.ProductName,
+        ISNULL((SELECT SUM(Quantity) FROM PurchaseMaster WHERE ProductId=p.ProductId AND ShopId=@ShopId),0) as TotalPurchase,
+        ISNULL((SELECT SUM(Quantity) FROM SalesMaster WHERE ProductId=p.ProductId AND ShopId=@ShopId),0) as TotalSale
         FROM Products p
-        WHERE p.ShopId=@ShopId";
+        WHERE p.ShopId=@ShopId GROUP BY p.ProductId,p.ProductName";
             using var cmd = new SqlCommand(query, con);
             cmd.Parameters.AddWithValue("@ShopId", shopId);
             con.Open();

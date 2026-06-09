@@ -1,5 +1,72 @@
 wwwroot\app.css
+wwwroot\css\main.css
+wwwroot\css\util.css
 wwwroot\favicon.png
+wwwroot\fonts\font-awesome-4.7.0\css\font-awesome.css
+wwwroot\fonts\font-awesome-4.7.0\css\font-awesome.min.css
+wwwroot\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.eot
+wwwroot\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg
+wwwroot\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf
+wwwroot\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff
+wwwroot\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.woff2
+wwwroot\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf
+wwwroot\fonts\font-awesome-4.7.0\HELP-US-OUT.txt
+wwwroot\fonts\font-awesome-4.7.0\less\animated.less
+wwwroot\fonts\font-awesome-4.7.0\less\bordered-pulled.less
+wwwroot\fonts\font-awesome-4.7.0\less\core.less
+wwwroot\fonts\font-awesome-4.7.0\less\fixed-width.less
+wwwroot\fonts\font-awesome-4.7.0\less\font-awesome.less
+wwwroot\fonts\font-awesome-4.7.0\less\icons.less
+wwwroot\fonts\font-awesome-4.7.0\less\larger.less
+wwwroot\fonts\font-awesome-4.7.0\less\list.less
+wwwroot\fonts\font-awesome-4.7.0\less\mixins.less
+wwwroot\fonts\font-awesome-4.7.0\less\path.less
+wwwroot\fonts\font-awesome-4.7.0\less\rotated-flipped.less
+wwwroot\fonts\font-awesome-4.7.0\less\screen-reader.less
+wwwroot\fonts\font-awesome-4.7.0\less\stacked.less
+wwwroot\fonts\font-awesome-4.7.0\less\variables.less
+wwwroot\fonts\font-awesome-4.7.0\scss\font-awesome.scss
+wwwroot\fonts\font-awesome-4.7.0\scss\_animated.scss
+wwwroot\fonts\font-awesome-4.7.0\scss\_bordered-pulled.scss
+wwwroot\fonts\font-awesome-4.7.0\scss\_core.scss
+wwwroot\fonts\font-awesome-4.7.0\scss\_fixed-width.scss
+wwwroot\fonts\font-awesome-4.7.0\scss\_icons.scss
+wwwroot\fonts\font-awesome-4.7.0\scss\_larger.scss
+wwwroot\fonts\font-awesome-4.7.0\scss\_list.scss
+wwwroot\fonts\font-awesome-4.7.0\scss\_mixins.scss
+wwwroot\fonts\font-awesome-4.7.0\scss\_path.scss
+wwwroot\fonts\font-awesome-4.7.0\scss\_rotated-flipped.scss
+wwwroot\fonts\font-awesome-4.7.0\scss\_screen-reader.scss
+wwwroot\fonts\font-awesome-4.7.0\scss\_stacked.scss
+wwwroot\fonts\font-awesome-4.7.0\scss\_variables.scss
+wwwroot\fonts\iconic\css\material-design-iconic-font.css
+wwwroot\fonts\iconic\css\material-design-iconic-font.min.css
+wwwroot\fonts\iconic\fonts\Material-Design-Iconic-Font.eot
+wwwroot\fonts\iconic\fonts\Material-Design-Iconic-Font.svg
+wwwroot\fonts\iconic\fonts\Material-Design-Iconic-Font.ttf
+wwwroot\fonts\iconic\fonts\Material-Design-Iconic-Font.woff
+wwwroot\fonts\iconic\fonts\Material-Design-Iconic-Font.woff2
+wwwroot\fonts\poppins\Poppins-Black.ttf
+wwwroot\fonts\poppins\Poppins-BlackItalic.ttf
+wwwroot\fonts\poppins\Poppins-Bold.ttf
+wwwroot\fonts\poppins\Poppins-BoldItalic.ttf
+wwwroot\fonts\poppins\Poppins-ExtraBold.ttf
+wwwroot\fonts\poppins\Poppins-ExtraBoldItalic.ttf
+wwwroot\fonts\poppins\Poppins-ExtraLight.ttf
+wwwroot\fonts\poppins\Poppins-ExtraLightItalic.ttf
+wwwroot\fonts\poppins\Poppins-Italic.ttf
+wwwroot\fonts\poppins\Poppins-Light.ttf
+wwwroot\fonts\poppins\Poppins-LightItalic.ttf
+wwwroot\fonts\poppins\Poppins-Medium.ttf
+wwwroot\fonts\poppins\Poppins-MediumItalic.ttf
+wwwroot\fonts\poppins\Poppins-Regular.ttf
+wwwroot\fonts\poppins\Poppins-SemiBold.ttf
+wwwroot\fonts\poppins\Poppins-SemiBoldItalic.ttf
+wwwroot\fonts\poppins\Poppins-Thin.ttf
+wwwroot\fonts\poppins\Poppins-ThinItalic.ttf
+wwwroot\image\1.jpg
+wwwroot\image\2.jpg
+wwwroot\image\icons\favicon.ico
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
@@ -52,43 +119,42 @@ wwwroot\lib\bootstrap\dist\js\bootstrap.js
 wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
 wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
 wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\app.css
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap.css
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\site.rtl.min.css.map
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+wwwroot\vendor\animate\animate.css
+wwwroot\vendor\animsition\css\animsition.css
+wwwroot\vendor\animsition\css\animsition.min.css
+wwwroot\vendor\animsition\js\animsition.js
+wwwroot\vendor\animsition\js\animsition.min.js
+wwwroot\vendor\bootstrap\css\bootstrap-grid.css
+wwwroot\vendor\bootstrap\css\bootstrap-grid.css.map
+wwwroot\vendor\bootstrap\css\bootstrap-grid.min.css
+wwwroot\vendor\bootstrap\css\bootstrap-grid.min.css.map
+wwwroot\vendor\bootstrap\css\bootstrap-reboot.css
+wwwroot\vendor\bootstrap\css\bootstrap-reboot.css.map
+wwwroot\vendor\bootstrap\css\bootstrap-reboot.min.css
+wwwroot\vendor\bootstrap\css\bootstrap-reboot.min.css.map
+wwwroot\vendor\bootstrap\css\bootstrap.css
+wwwroot\vendor\bootstrap\css\bootstrap.css.map
+wwwroot\vendor\bootstrap\css\bootstrap.min.css
+wwwroot\vendor\bootstrap\css\bootstrap.min.css.map
+wwwroot\vendor\bootstrap\js\bootstrap.js
+wwwroot\vendor\bootstrap\js\bootstrap.min.js
+wwwroot\vendor\bootstrap\js\popper.js
+wwwroot\vendor\bootstrap\js\popper.min.js
+wwwroot\vendor\bootstrap\js\tooltip.js
+wwwroot\vendor\countdowntime\countdowntime.js
+wwwroot\vendor\css-hamburgers\hamburgers.css
+wwwroot\vendor\css-hamburgers\hamburgers.min.css
+wwwroot\vendor\daterangepicker\daterangepicker.css
+wwwroot\vendor\daterangepicker\daterangepicker.js
+wwwroot\vendor\daterangepicker\moment.js
+wwwroot\vendor\daterangepicker\moment.min.js
+wwwroot\vendor\jquery\jquery-3.2.1.min.js
+wwwroot\vendor\perfect-scrollbar\perfect-scrollbar.css
+wwwroot\vendor\perfect-scrollbar\perfect-scrollbar.min.js
+wwwroot\vendor\select2\select2.css
+wwwroot\vendor\select2\select2.js
+wwwroot\vendor\select2\select2.min.css
+wwwroot\vendor\select2\select2.min.js
 D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
 D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
 D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
@@ -96,12 +162,96 @@ D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\j
 D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
 D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\js\bootstrap.js
 D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\site.css
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\site.css.map
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\site.min.css
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\site.min.css.map
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\site.rtl.css
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\site.rtl.css.map
-D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\site.rtl.min.css
 D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\animate\animate.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\animsition\css\animsition.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\animsition\css\animsition.min.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\animsition\js\animsition.js
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\animsition\js\animsition.min.js
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\bootstrap\css\bootstrap-grid.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\bootstrap\css\bootstrap-grid.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\bootstrap\css\bootstrap-grid.min.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\bootstrap\css\bootstrap-grid.min.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\bootstrap\css\bootstrap-reboot.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\bootstrap\css\bootstrap-reboot.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\bootstrap\css\bootstrap-reboot.min.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\bootstrap\css\bootstrap-reboot.min.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\bootstrap\css\bootstrap.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\bootstrap\css\bootstrap.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\bootstrap\css\bootstrap.min.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\css-hamburgers\hamburgers.min.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\daterangepicker\daterangepicker.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\daterangepicker\daterangepicker.js
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\daterangepicker\moment.js
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\daterangepicker\moment.min.js
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\jquery\jquery-3.2.1.min.js
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\perfect-scrollbar\perfect-scrollbar.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\perfect-scrollbar\perfect-scrollbar.min.js
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\select2\select2.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\select2\select2.js
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\select2\select2.min.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\select2\select2.min.js
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\image\icons\favicon.ico
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\fonts\font-awesome-4.7.0\css\font-awesome.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\css\util.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\css\main.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\app.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\fonts\iconic\fonts\Material-Design-Iconic-Font.svg
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\fonts\iconic\css\material-design-iconic-font.min.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\fonts\iconic\css\material-design-iconic-font.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\fonts\font-awesome-4.7.0\HELP-US-OUT.txt
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\fonts\font-awesome-4.7.0\fonts\FontAwesome.otf
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\fonts\font-awesome-4.7.0\fonts\fontawesome-webfont.svg
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\fonts\font-awesome-4.7.0\css\font-awesome.min.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\bootstrap\js\bootstrap.js
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\bootstrap\js\bootstrap.min.js
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\bootstrap\js\popper.js
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\bootstrap\js\popper.min.js
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\bootstrap\js\tooltip.js
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\countdowntime\countdowntime.js
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\css-hamburgers\hamburgers.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\vendor\bootstrap\css\bootstrap.min.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\site.rtl.min.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\site.rtl.min.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\site.rtl.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\site.rtl.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\site.min.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\site.min.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\site.css.map
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\site.css
+D:\Floder File\Project\E-Commerce\Project\SuperShop\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map

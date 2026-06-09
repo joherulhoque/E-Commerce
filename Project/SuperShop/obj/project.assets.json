@@ -39,7 +39,7 @@
           }
         }
       },
-      "Blazor.Bootstrap/3.5.0": {
+      "Blazor.Bootstrap/3.4.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "9.0.0"
@@ -873,27 +873,26 @@
         "lib/netstandard2.0/Azure.Identity.xml"
       ]
     },
-    "Blazor.Bootstrap/3.5.0": {
-      "sha512": "26dwbF1z84v/e0zbUb+c58k7a4NBbdTselt5T766m0vqj7Pq0wWTokfu5C6svATCUppZm8eCS6+zIduaF7Wnwg==",
+    "Blazor.Bootstrap/3.4.0": {
+      "sha512": "RlK531tJCXGEoESwjDIARttoRPtOCXXQqrNwfaai7sIWir2pqsBop0gySBqN742m+K2vY9p9J7Mwwl6XcNXm6g==",
       "type": "package",
-      "path": "blazor.bootstrap/3.5.0",
+      "path": "blazor.bootstrap/3.4.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "128X128.png",
         "README.md",
-        "blazor.bootstrap.3.5.0.nupkg.sha512",
+        "blazor.bootstrap.3.4.0.nupkg.sha512",
         "blazor.bootstrap.nuspec",
         "build/Blazor.Bootstrap.props",
         "build/Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
         "build/Microsoft.AspNetCore.StaticWebAssets.props",
         "buildMultiTargeting/Blazor.Bootstrap.props",
         "buildTransitive/Blazor.Bootstrap.props",
-        "lib/net10.0/BlazorBootstrap.dll",
         "lib/net6.0/BlazorBootstrap.dll",
         "lib/net8.0/BlazorBootstrap.dll",
         "lib/net9.0/BlazorBootstrap.dll",
-        "staticwebassets/Blazor.Bootstrap.olwso25aue.bundle.scp.css",
+        "staticwebassets/Blazor.Bootstrap.7t9tbfaemk.bundle.scp.css",
         "staticwebassets/blazor.bootstrap.css",
         "staticwebassets/blazor.bootstrap.js",
         "staticwebassets/blazor.bootstrap.pdf.js",
@@ -2101,7 +2100,7 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "Blazor.Bootstrap >= 3.5.0",
+      "Blazor.Bootstrap >= 3.4.0",
       "Blazorise.Icons.Bootstrap >= 1.8.8",
       "Blazorise.Sidebar >= 1.8.8",
       "Microsoft.Data.SqlClient >= 6.1.3"
@@ -2160,7 +2159,7 @@
         "dependencies": {
           "Blazor.Bootstrap": {
             "target": "Package",
-            "version": "[3.5.0, )"
+            "version": "[3.4.0, )"
           },
           "Blazorise.Icons.Bootstrap": {
             "target": "Package",
