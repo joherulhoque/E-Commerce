@@ -1,0 +1,82 @@
+📦 1. Product Setup (Initial Setup)
+
+👉 দোকান শুরু করার আগে:
+
+Product category তৈরি (Food, Grocery, Cosmetics)
+Product entry (Name, Price, Barcode)
+Unit setup (kg, pcs, liter)
+Rice - 1kg - 80 Tk
+Oil - 1 liter - 160 Tk
+Soap - 1 pcs - 25 Tk
+🛒 2. Purchase (Supplier থেকে কেনা)
+
+👉 দোকান মালিক supplier থেকে পণ্য আনে
+
+Supplier selection
+Purchase order
+Goods receive
+Stock entry update
+Supplier → Goods → Invoice → Stock increase
+
+✔ Example:
+
+100 kg rice purchase
+Stock +100 update
+📦 3. Stock Management
+
+👉 সব পণ্য stock এ জমা থাকে
+
+Available stock check
+Low stock alert
+Damage/expired item remove
+Stock = Opening + Purchase - Sales
+🧾 4. Sales (POS System)
+
+👉 Customer দোকানে এসে কিনে
+
+Product select
+Barcode scan / manual add
+Cart add
+Discount apply
+Bill generate
+Product → Cart → Total → Payment → Invoice
+💰 5. Payment
+
+👉 Customer payment দেয়
+
+Cash
+Card
+Mobile banking (bKash, Nagad)
+
+✔ After payment:
+
+Invoice print
+Stock decrease
+🧾 6. Invoice / Receipt
+
+👉 Customer কে bill দেওয়া হয়
+
+Invoice number
+Product list
+Total amount
+Date/time
+📊 7. Daily Sales Report
+
+👉 দিনের শেষে হিসাব:
+
+Total sales
+Profit
+Loss
+Top selling product
+Sales Report = Total Income - Cost
+📦 8. Stock Update Automatically
+
+👉 Sales হলে stock কমে যায়
+
+Stock = Stock - Sold Quantity
+👤 9. Customer Management (Optional)
+Customer name
+Due balance
+Purchase history
+💸 10. Profit Calculation
+Profit = Sales Price - Purchase Cost
